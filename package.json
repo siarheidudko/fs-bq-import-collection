@@ -1,0 +1,74 @@
+{
+  "_from": "@firebaseextensions/fs-bq-import-collection",
+  "_id": "@firebaseextensions/fs-bq-import-collection@0.1.8",
+  "_inBundle": false,
+  "_integrity": "sha512-2lotV7X3an4wbdGJpmnNz/Y9h+PUogr7PxfOKG5ZmbowBw1gyrGTzt6Lphz/xCZXZqg50KYWdpboB0zRVwzp8w==",
+  "_location": "/@firebaseextensions/fs-bq-import-collection",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@firebaseextensions/fs-bq-import-collection",
+    "name": "@firebaseextensions/fs-bq-import-collection",
+    "escapedName": "@firebaseextensions%2ffs-bq-import-collection",
+    "scope": "@firebaseextensions",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@firebaseextensions/fs-bq-import-collection/-/fs-bq-import-collection-0.1.8.tgz",
+  "_shasum": "d3895d77bac0aa9e804ed68fc120f94341281bdf",
+  "_spec": "@firebaseextensions/fs-bq-import-collection",
+  "_where": "/Users/siarhei/Projects/fs-bq-import-collection",
+  "author": {
+    "name": "Jan Wyszynski",
+    "email": "wyszynski@google.com"
+  },
+  "bin": {
+    "fs-bq-import-collection": "lib/index.js"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@firebaseextensions/firestore-bigquery-change-tracker": "^1.1.2",
+    "commander": "5.0.0",
+    "firebase-admin": "^7.1.1",
+    "firebase-functions": "^2.2.1",
+    "generate-schema": "^2.6.0",
+    "inquirer": "^6.4.0",
+    "sql-formatter": "^2.3.3"
+  },
+  "deprecated": false,
+  "description": "Import a Firestore Collection into a BigQuery Changelog Table",
+  "devDependencies": {
+    "@types/chai": "^4.2.0",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "rimraf": "^2.6.3",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.4.5"
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "Apache-2.0",
+  "main": "./lib/index.js",
+  "name": "@firebaseextensions/fs-bq-import-collection",
+  "repository": {
+    "type": "git",
+    "url": "github.com/firebase/extensions.git",
+    "directory": "firestore-bigquery-export/scripts/import"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rimraf ./lib",
+    "compile": "tsc",
+    "import": "node ./lib/index.js",
+    "prepare": "npm run build"
+  },
+  "version": "0.1.8-sdudko"
+}
